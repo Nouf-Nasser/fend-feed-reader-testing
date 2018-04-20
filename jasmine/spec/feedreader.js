@@ -94,15 +94,15 @@ $(function() {
          */
          // Complete the loadFeed() function first
          beforeEach(function(done) {
-          loadFeed(0);
-          done();
+          loadFeed(0, function() {
+            done();
+          });
         });
 
         // Run asynchronously
         it('should have at least one .entry element within .feed container', function(done) {
           var container = document.querySelector('.feed');
           expect(container.childNodes.length).not.toBe(0);
-          console.log(container.childNodes.length);
           done();
         });
     });
