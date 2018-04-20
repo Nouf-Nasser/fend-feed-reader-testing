@@ -101,17 +101,16 @@ $(function() {
         // Run asynchronously
         it('should have at least one .entry element within .feed container', function(done) {
           var container = document.querySelector('.feed');
-          expect(container.length).not.toBe(0);
+          expect(container.childNodes.length).not.toBe(0);
+          console.log(container.childNodes.length);
           done();
         });
     });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
-    describe('New Feed Selection', function() {
 
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-    });
 }());
