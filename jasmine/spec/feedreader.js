@@ -71,7 +71,7 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
           it('menu changes visibility when icon is clicked', function() {
-            var menuIcon = document.querySelector('.menu-icon-link');
+            var menuIcon = $('.menu-icon-link');
 
             // Click to open the menu
             menuIcon.click();

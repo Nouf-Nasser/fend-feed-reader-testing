@@ -12,4 +12,5 @@ Implementing the tests with Jasmine on an already-built application.
 
 ## Dependencies
 
-The application uses [Jasmine 2.1.2](https://jasmine.github.io/2.1/introduction) to complete the tests.
+- The application uses [Jasmine 2.1.2](https://jasmine.github.io/2.1/introduction) to complete the tests.
+- The application uses [jQuery](https://jquery.com/)
