@@ -110,7 +110,7 @@ $(function() {
     /* TODO: Write a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
       // Check the length before loadFeed has run
-        var initialLength = document.querySelector('.feed').childNodes.length;
+        var initialLength = $('.feed').html();
 
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
@@ -128,7 +128,7 @@ $(function() {
         // Comparing the initial length (before running loadFeed)
         // to the final length (after loadFeed has run)
         it('should change the content when a new feed is loaded', function(done) {
-          var finalLength = document.querySelector('.feed').childNodes.length;
+          var finalLength = $('.feed').html();
           expect(finalLength).not.toBe(initialLength);
           done();
         });
