@@ -101,8 +101,8 @@ $(function() {
 
         // Run asynchronously
         it('should have at least one .entry element within .feed container', function(done) {
-          var container = document.querySelector('.feed');
-          expect(container.childNodes.length).not.toBe(0);
+          var entry = $('.feed .entry');
+          expect(entry.length).not.toBe(0);
           done();
         });
     });
